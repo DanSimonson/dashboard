@@ -1,9 +1,9 @@
 import { Button } from "@/components/ui/button";
-
+                      // className="py-24 text-2xl"
 export default function Home() {
   return (
     <>
-      <h1 className="py-24 text-2xl flex justify-center align-middle">Dashboard</h1>
+      <h1>Dashboard</h1>
     </>
   );
 }
