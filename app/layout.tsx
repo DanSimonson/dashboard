@@ -16,15 +16,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    // w=[350px] w-full
     <html lang="en">
       <body className={inter.className}>
         <Navbar />
         <div className="flex">
           <div className="hidden md:block h-[100vh] min-w-64">
-            <Sidebar />
           </div>
-          <div className="p-5  md:max-w[1140px]">{children}</div>
+          <div className="p-5 w-full md:max-w-[1140px]">{children}</div>
         </div>
       </body>
     </html>

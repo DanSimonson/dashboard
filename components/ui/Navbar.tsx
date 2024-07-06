@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { GiMountaintop } from "react-icons/gi";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -30,9 +31,9 @@ const Navbar = () => {
             <DropdownMenuLabel>My Account</DropdownMenuLabel>
             <DropdownMenuSeparator />
             <DropdownMenuItem>Profile</DropdownMenuItem>
-            <DropdownMenuItem>Billing</DropdownMenuItem>
-            <DropdownMenuItem>Team</DropdownMenuItem>
-            <DropdownMenuItem>Subscription</DropdownMenuItem>
+            <DropdownMenuItem>Blogs</DropdownMenuItem>
+            <DropdownMenuItem><Link href='/write'>Write</Link></DropdownMenuItem>
+            {/* <DropdownMenuItem>Subscription</DropdownMenuItem> */}
           </DropdownMenuContent>
         </DropdownMenu>
       </div>
